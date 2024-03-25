@@ -5,7 +5,7 @@
   text-decoration: none;
   border: none;
   outline: none;
-  font-family: "poppins, sans-serif";
+  font-family: 'poppins, sans-serif';
   scroll-behavior: smooth;
 }
 :root {
@@ -129,7 +129,7 @@ section {
   color: var(--main-color);
 }
 .btn-box .btn::before {
-  content: "";
+  content: '';
   position: absolute;
   top: 0;
   left: 0;
@@ -181,7 +181,7 @@ section {
   color: var(--bg-color);
 }
 .home-sci a::before {
-  content: "";
+  content: '';
   position: absolute;
   top: 0;
   left: 0;
@@ -288,7 +288,7 @@ span {
 }
 
 .education-box .education-content ::before {
-  content: "";
+  content: '';
   position: absolute;
   top: 0;
   left: -3.3rem;
@@ -308,7 +308,7 @@ span {
 }
 
 .education-content .content::before {
-  content: "";
+  content: '';
   position: absolute;
   top: 0;
   left: 0;
@@ -455,6 +455,10 @@ span {
 .footer-text p {
   font-size: 1.6rem;
 }
+.projects {
+  max-height: 30vh;
+  min-height: 70vh;
+}
 
 .footer-iconTop a {
   position: relative;
@@ -494,6 +498,22 @@ span {
   }
 }
 @media (max-width: 480px) {
+  .swiper {
+    width: 70%;
+    height: 70%;
+  }
+  body {
+    width: 480px;
+  }
+  .projects {
+    max-height: 30vh;
+    min-height: 50vh;
+  }
+  section {
+    width: 480px;
+    min-width: 480px
+    padding: 10rem 9% 2rem;
+  }
   .navbar a {
     font-size: 0;
     color: var(--text-color);
