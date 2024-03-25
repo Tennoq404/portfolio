@@ -284,7 +284,7 @@ span {
 
 .education-box .education-content {
   position: relative;
-  padding-left: 2rem;
+  padding-left: 1rem;
 }
 
 .education-box .education-content ::before {
@@ -353,6 +353,10 @@ span {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.swiper-wrapper {
+  border: 1px solid white;
 }
 
 .swiper-slide img {
@@ -461,4 +465,65 @@ span {
   background: var(--main-color);
   border: 0.2rem solid var(--main-color);
   border-radius: 0.6rem;
+}
+@media (max-width: 700px) {
+  .btn-box {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    width: 34.5rem;
+    height: 5rem;
+  }
+  .btn-box .btn {
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 15rem;
+    height: 60%;
+    background: var(--main-color);
+    border: 0.2rem solid var(--main-color);
+    border-radius: 0.8rem;
+    font-size: 1.8rem;
+    font-weight: 600;
+    letter-spacing: 0.1rem;
+    color: var(--bg-color);
+    z-index: 1;
+    overflow: hidden;
+    transition: 0.5s;
+  }
+}
+@media (max-width: 480px) {
+  .navbar a {
+    font-size: 0;
+    color: var(--text-color);
+    font-weight: 500;
+    margin-left: 3.5rem;
+    transition: 0.3s;
+  }
+  .btn-box {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    width: 34.5rem;
+    height: 5rem;
+  }
+  .btn-box .btn {
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 15rem;
+    height: 60%;
+    background: var(--main-color);
+    border: 0.2rem solid var(--main-color);
+    border-radius: 0.8rem;
+    font-size: 1.8rem;
+    font-weight: 600;
+    letter-spacing: 0.1rem;
+    color: var(--bg-color);
+    z-index: 1;
+    overflow: hidden;
+    transition: 0.5s;
+  }
 }
